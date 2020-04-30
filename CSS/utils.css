@@ -1,0 +1,146 @@
+/*变量*/
+
+:root{
+  --default: #409EFF;
+  --success: #67C23A;
+  --warning: #E6A23C;
+  --danger: #F56C6C;
+  --info: #909399;
+
+  /* 文字 */
+  --mainFont: #303133;
+  --fontColor: #606266;
+  --secondaryFont: #909399;
+  --placeholderColor:#C0C4CC;
+  --oneBorder: #DCDFE6;
+  --twoBorder: #E4E7ED;
+  --threeBorder: #EBEEF5;
+  --fourBorder: #F2F6FC;
+  --baseBlack: #000000;
+  --baseWhite: #ffffff;
+  /* 通过JS修改这个变量，达到自己想要的颜色 */
+  --tempBorderColor: #000000 
+}
+
+
+/* 弹性布局 */
+.cb-flex{
+  display: flex;
+}
+
+.cb-flex-column{
+  display: flex;
+  flex-direction: column;
+}
+
+/* 水平居中 */
+.cb-justify-center{
+  justify-content: center;
+}
+
+/* 垂直居中 */
+.cb-align-items{
+  align-items: center;
+}
+
+/* 组合样式   */
+.cb-df-sb {
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cb-df-sa {
+  display:flex;
+  align-items: center;
+  justify-content: space-around;
+}
+ 
+/* 水平垂直居中 */
+.cb-df-c {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* 禁止选中文本 */
+.cb-no-user{
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  -o-user-select:none;
+  user-select:none;
+}
+
+/* 鼠标样式 */
+.cb-curp{
+  cursor: pointer;
+}
+.cb-curh{
+  cursor: help;
+}
+.cb-curm{
+  cursor: move;
+}
+.cb-curprogress{
+  cursor: progress;
+}
+.cb-curw{
+  cursor: wait;
+}
+
+/* 边框 */
+.cb-bordersolid{
+  border: 1px solid var(--tempBorderColor);
+}
+
+/*点线*/
+.cb-borderdotted{
+  border: 1px dotted var(--tempBorderColor);
+}
+
+.cb-borderdouble{
+  border: 1px double var(--tempBorderColor);
+}
+
+/*虚线*/
+.cb-borderdashed{
+  border: 1px dashed var(--tempBorderColor);
+}
+
+.cb-bordernone{
+  border: none;
+}
+
+.cb-bg-cover {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* 换行 */
+.cb-warp{
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+
+.cb-multi-row-wrap{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* 文本 */
+
+/* 文字居中 */
+.cb-text-center{
+  text-align: center;
+}
+
+.cb-p-indent{
+  text-indent: 2em;
+}
+
